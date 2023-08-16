@@ -1,4 +1,5 @@
-﻿using Bookify.Infrastucture;
+﻿using Bookify.API.Middleware;
+using Bookify.Infrastucture;
 using Microsoft.EntityFrameworkCore;
 
 namespace Bookify.API.Extensions;

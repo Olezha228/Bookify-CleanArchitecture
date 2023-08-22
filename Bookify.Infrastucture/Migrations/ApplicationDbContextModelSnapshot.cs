@@ -194,6 +194,10 @@ namespace Bookify.Infrastucture.Migrations
                         .IsUnique()
                         .HasDatabaseName("ix_users_email");
 
+                    b.HasIndex("IdentityId")
+                        .IsUnique()
+                        .HasDatabaseName("ix_users_identity_id");
+
                     b.ToTable("users", (string)null);
                 });
 

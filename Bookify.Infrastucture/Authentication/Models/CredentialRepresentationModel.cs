@@ -1,6 +1,4 @@
-﻿using System.Text.Json.Serialization;
-
-namespace Bookify.Infrastucture.Authentication.Models;
+﻿namespace Bookify.Infrastucture.Authentication.Models;
 
 public class CredentialRepresentationModel
 {

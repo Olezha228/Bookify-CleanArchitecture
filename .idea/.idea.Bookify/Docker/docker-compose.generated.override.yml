@@ -1,0 +1,23 @@
+# This is a generated file. Not intended for manual editing.
+version: "3.4"
+services:
+  bookify.api:
+    build:
+      context: "D:\\AspNetProjects\\Bookify"
+      dockerfile: "Bookify.API/Dockerfile"
+      target: "base"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net7.0/Bookify.API.dll"
+    environment:
+      DOTNET_USE_POLLING_FILE_WATCHER: "true"
+      NUGET_PACKAGES: "C:\\Users\\oleg.FXC\\.nuget\\packages"
+      NUGET_FALLBACK_PACKAGES: "C:\\Users\\oleg.FXC\\.nuget\\packages"
+    image: "bookifyapi:dev"
+    ports: []
+    volumes:
+    - "C:\\Users\\oleg.FXC\\.nuget\\packages:/root/.nuget/fallbackpackages"
+    - "D:\\AspNetProjects\\Bookify\\Bookify.API:/app:rw"
+    - "D:\\AspNetProjects\\Bookify:/src:rw"
+    working_dir: "/app"
